@@ -10,6 +10,7 @@ const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_ke
 
 const UpdateItem = () => {
     const {name, category, recipe, price, _id} = useLoaderData();
+    console.log(_id);
 
     const { register, handleSubmit } = useForm();
     const axiosPublic = useAxiosPublic();
